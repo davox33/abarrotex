@@ -17,6 +17,15 @@
  * {
      box-sizing: border-box !important;
 }
+/*Nota de Antonio: Agregue los valores de css para que se mantuviera centrado el contenido del proyecto con los margenes
+Esto para hacerlo mas bonito y se pueda usar en la parte de Jared y mia*/
+#contenedorPadre {
+    display: flex;
+    justify-content: center;
+  }
+  #contenedorHijo {
+    align-self: center;
+  }
  html {
      scroll-behavior: smooth;
 }
