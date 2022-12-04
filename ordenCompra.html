@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Responsive-->
   <link rel="stylesheet" href="css/responsive.css">
-  <title>Edita tus datos</title>
+  <title>Historial de Órdenes</title>
   <!-- Bootstrap Icons links -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -24,158 +24,174 @@
 </head>
 
 <body>
-  <div class="menu-area">
-    <div class="limit-box">
-      <nav class="main-menu ">
-        <ul class="menu-area-main">
-          <li><a href="index.html" class="text-white">Hogar</a> </li>
-          <li> <a href="#about" class="text-white">Acerca de nosotros</a> </li>
-          <li> <a href="#vegetable" class="text-white">Productos</a> </li>
-          <li> <a href="#testimonial" class="text-white">Reseñas</a> </li>
-          <li class="active"> <a href="profile.html">Mi perfil</a> </li>
+  </head>
 
-          <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
-        </ul>
-      </nav>
+  <body>
+    <div class="menu-area">
+      <div class="limit-box">
+        <nav class="main-menu ">
+          <ul class="menu-area-main">
+            <li><a href="index.html" class="text-white">Hogar</a> </li>
+            <li> <a href="#about" class="text-white">Acerca de nosotros</a> </li>
+            <li> <a href="#vegetable" class="text-white">Productos</a> </li>
+            <li> <a href="#testimonial" class="text-white">Reseñas</a> </li>
+            <li class="active"> <a href="profile.html">Mi perfil</a> </li>
+
+            <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
-  </div>
-  <div class="container-md bg-dark ms-5">
-    <p class="h1 font-family-sans-serif pl-5 pt-3 text-success">Edita Tu Información</p>
-    <div class="container-fluid align-items-center">
-      <div class="row g-3 bg-white text-center">
-        <form>
-          <div class="row ">
-            <div class="col ml-5">
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Dirección de Correo</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Ingresa tu correo">
-                <div id="emailHelp" class="form-text"></div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresa contraseña">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword2" class="form-label">Confirmar Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Valida contraseña">
-              </div>
-              <div class="mb-3">
-                <label for="telefono" class="form-label">Telefono</label>
-                <input type="number" class="form-control" id="telefono" placeholder="Ingresa Telefono">
-              </div>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Ingresa nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingresa Nombre">
-              </div>
-              <div class="mb-3">
-                <label for="Estado" class="form-label">Selecciona Estado</label>
-                <select>
-                  <option value="CDMX">Ciudad de México</option>
-                  <option value="AGS">Aguascalientes</option>
-                  <option value="BCN">Baja California</option>
-                  <option value="BCS">Baja California Sur</option>
-                  <option value="CAM">Campeche</option>
-                  <option value="CHP">Chiapas</option>
-                  <option value="CHI">Chihuahua</option>
-                  <option value="COA">Coahuila</option>
-                  <option value="COL">Colima</option>
-                  <option value="DUR">Durango</option>
-                  <option value="GTO">Guanajuato</option>
-                  <option value="GRO">Guerrero</option>
-                  <option value="HGO">Hidalgo</option>
-                  <option value="JAL">Jalisco</option>
-                  <option value="MEX">M&eacute;xico</option>
-                  <option value="MIC">Michoac&aacute;n</option>
-                  <option value="MOR">Morelos</option>
-                  <option value="NAY">Nayarit</option>
-                  <option value="NLE">Nuevo Le&oacute;n</option>
-                  <option value="OAX">Oaxaca</option>
-                  <option value="PUE">Puebla</option>
-                  <option value="QRO">Quer&eacute;taro</option>
-                  <option value="ROO">Quintana Roo</option>
-                  <option value="SLP">San Luis Potos&iacute;</option>
-                  <option value="SIN">Sinaloa</option>
-                  <option value="SON">Sonora</option>
-                  <option value="TAB">Tabasco</option>
-                  <option value="TAM">Tamaulipas</option>
-                  <option value="TLX">Tlaxcala</option>
-                  <option value="VER">Veracruz</option>
-                  <option value="YUC">Yucat&aacute;n</option>
-                  <option value="ZAC">Zacatecas</option>
-                </select>
-              </div>
+    </div>
+    <div class="container-md bg-dark ms-5">
+      <p class="h1 font-family-sans-serif pl-5 pt-3 text-success">Tus Compras</p>
+      <div class="container-lg bg-dark">
+        <div class="container text-center pt-5">
+          <div class="row bg-white border border-secondary">
+            <div class="col">
+              <p class="h3 text-left text-dark pt-3">Compra realizada:</p>
             </div>
-            <div class="col pl-5">
-              <div class="mb-3">
-                <label for="dirección" class="form-label">Ingresa dirección</label>
-                <input type="text" class="form-control" id="dirección" placeholder="Ingresa Dirección">
-              </div>
-              <div class="mb-3">
-                <label for="codigo" class="form-label">Código Postal</label>
-                <input type="number" class="form-control" id="codigo" placeholder="Ingresa Código Postal">
-              </div>
-              <div class="mb-3">
-                <div class="text-center">
-                  <img src="images/defaultUser.jpg" class="rounded" alt="editImage" width="150" height="150">
-                  <button type="button" class="btn btn-warning text-white mt-1">Selecciona Imagen</button>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-success"><a class="text-white" href="profile.html">Guardar
-                  Información</a></button>
+            <div class="col">
+              <p class="h5 text-left text-primary pt-4"> 5 de Diciembre 2022</p>
             </div>
           </div>
+          <div class="row bg-white pt-5">
+            <div class="col">
+              <div class="text-center">
+                <img src="images/galletas.jpg" class="rounded" alt="galletas" width="150" height="150">
+              </div>
+            </div>
+            <div class="col">
+              <p class="h4 text-left text-dark">Estado</p>
+              <p class="h5 text-left text-success">Entregado</p>
+              <p class="h4 text-left text-dark">Producto</p>
+              <p class="h5 text-left text-secondary">Galletas María</p>
+              <p class="h4 text-left text-dark">Cantidad</p>
+              <p class="h5 text-left text-secondary">10</p>
+              <p class="h4 text-left text-dark">Fecha de entrega</p>
+              <p class="h5 text-left text-secondary">6 de diciembre del 2022</p>
+            </div>
+            <div class="col">
+              <p class="h4 text-left text-dark">Entregado en;</p>
+              <p class="h5 text-left text-secondary">Las Adjuntas #119, Fracc. Municipio Libre, C.P. 20199,
+                Aguascalientes, Ags.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      </form>
+      <div class="container text-center pt-5">
+        <div class="row bg-white border border-secondary">
+          <div class="col">
+            <p class="h3 text-left text-dark pt-3">Compra realizada:</p>
+          </div>
+          <div class="col">
+            <p class="h5 text-left text-primary pt-4"> 3 de diciembre 2022</p>
+          </div>
+        </div>
+        <div class="row bg-white pt-5">
+          <div class="col">
+            <div class="text-center">
+              <img src="images/papel.jpg" class="rounded" alt="galletas" width="150" height="150">
+            </div>
+          </div>
+          <div class="col">
+            <p class="h4 text-left text-dark">Estado</p>
+            <p class="h5 text-left text-warning">Esperando Pago</p>
+            <p class="h4 text-left text-dark">Producto</p>
+            <p class="h5 text-left text-secondary">Papel Higienico Suave</p>
+            <p class="h4 text-left text-dark">Cantidad</p>
+            <p class="h5 text-left text-secondary">20</p>
+            <p class="h4 text-left text-dark">Fecha de entrega</p>
+            <p class="h5 text-left text-warning">Esperando pago</p>
+          </div>
+          <div class="col">
+            <p class="h4 text-left text-dark">Entregar en:</p>
+            <p class="h5 text-left text-secondary">Las Adjuntas #119, Fracc. Municipio Libre, C.P. 20199,
+              Aguascalientes, Ags.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center pt-5">
+        <div class="row bg-white border border-secondary">
+          <div class="col">
+            <p class="h3 text-left text-dark pt-3">Compra realizada:</p>
+          </div>
+          <div class="col">
+            <p class="h5 text-left text-primary pt-4"> 3 de diciembre 2022</p>
+          </div>
+        </div>
+        <div class="row bg-white pt-5">
+          <div class="col">
+            <div class="text-center">
+              <img src="images/Lechera.jpg" class="rounded" alt="galletas" width="150" height="150">
+            </div>
+          </div>
+          <div class="col">
+            <p class="h4 text-left text-dark">Estado</p>
+            <p class="h5 text-left text-danger">Cancelada</p>
+            <p class="h4 text-left text-dark">Producto</p>
+            <p class="h5 text-left text-secondary">Lechera</p>
+            <p class="h4 text-left text-dark">Cantidad</p>
+            <p class="h5 text-left text-secondary">44</p>
+            <p class="h4 text-left text-dark">Fecha de entrega</p>
+            <p class="h5 text-left text-danger">Cancelada</p>
+          </div>
+          <div class="col">
+            <p class="h4 text-left text-dark">Entregar en:</p>
+            <p class="h5 text-left text-secondary">Las Adjuntas #119, Fracc. Municipio Libre, C.P. 20199,
+              Aguascalientes, Ags.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
+    </div>
 
-  <footr>
-    <div class="footer bg-dark">
-      <div class="container-sm text-justify">
-        <div class="row justify-content-md-center">
-          <div class="col-md-11 my-5">
-            <div class="card border-secondary bg-secondary text-light mb-3">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="ms-5 mt-4">
-                      <h3 class="card-title">Abarrotex</h5>
-                        <p class="card-text">
-                        <h6>e-mail:</h6>
-                        abarrotex@gmail.com <br><br>
-                        <h6>Atención al Cliente:</h6>
-                        +52 449 451 8256
-                        </p>
+    <footr>
+      <div class="footer bg-dark">
+        <div class="container-sm text-justify">
+          <div class="row justify-content-md-center">
+            <div class="col-md-11 my-5">
+              <div class="card border-secondary bg-secondary text-light mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="ms-5 mt-4">
+                        <h3 class="card-title">Abarrotex</h5>
+                          <p class="card-text">
+                          <h6>e-mail:</h6>
+                          abarrotex@gmail.com <br><br>
+                          <h6>Atención al Cliente:</h6>
+                          +52 449 451 8256
+                          </p>
 
-                        <a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=100087571190388"
-                          target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a class="btn btn-success" href="https://wa.me/4494518256"><i class="bi bi-whatsapp"
-                            target="_blank" title="WhatsApp"></i></a>
-                        <a class="btn btn-light" href="https://www.instagram.com/abarrotex/" target="_blank"
-                          title="Telegram"><i class="bi bi-instagram"></i></a>
-                        <a class="btn btn-dark" href="https://www.tiktok.com/@abarrotex" target="_blank"
-                          title="TikTok"><i class="bi bi-tiktok"></i></a>
+                          <a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=100087571190388"
+                            target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+                          <a class="btn btn-success" href="https://wa.me/4494518256"><i class="bi bi-whatsapp"
+                              target="_blank" title="WhatsApp"></i></a>
+                          <a class="btn btn-light" href="https://www.instagram.com/abarrotex/" target="_blank"
+                            title="Telegram"><i class="bi bi-instagram"></i></a>
+                          <a class="btn btn-dark" href="https://www.tiktok.com/@abarrotex" target="_blank"
+                            title="TikTok"><i class="bi bi-tiktok"></i></a>
 
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <h5 class="card-title text-break">Dejanos tu información para poder brindarte
-                      una atención personalizada</h5>
-                    <p class="card-text me-5">Dejanos tus comentarios para saber tus problemas o de lo
-                      contrario para hacernos saber qué te agradó de tu compra con nosotros</p>
-                    <div class="me-5">
-                      <form>
-                        <input type="text" class="form-control" id="InputName" placeholder="Ingresa tu nombre..."
-                          style="margin-bottom: 20px;">
-                        <input type="email" class="form-control" id="InputEmail" placeholder="Ingresa un email..."
-                          style="margin-bottom: 20px;">
-                        <input type="text" class="form-control" id="InputMessage" placeholder="Ingresa tu mensaje..."
-                          style="margin-bottom: 20px;">
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                      </form>
+                    <div class="col-md-6">
+                      <h5 class="card-title text-break">Dejanos tu información para poder brindarte
+                        una atención personalizada</h5>
+                      <p class="card-text me-5">Dejanos tus comentarios para saber tus problemas o de lo
+                        contrario para hacernos saber qué te agradó de tu compra con nosotros</p>
+                      <div class="me-5">
+                        <form>
+                          <input type="text" class="form-control" id="InputName" placeholder="Ingresa tu nombre..."
+                            style="margin-bottom: 20px;">
+                          <input type="email" class="form-control" id="InputEmail" placeholder="Ingresa un email..."
+                            style="margin-bottom: 20px;">
+                          <input type="text" class="form-control" id="InputMessage" placeholder="Ingresa tu mensaje..."
+                            style="margin-bottom: 20px;">
+                          <button type="submit" class="btn btn-success">Enviar</button>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -183,16 +199,13 @@
             </div>
           </div>
         </div>
+        <div class="copyright">
+          <div class="container">
+            <p>Copyright © 2022 Abarrotex</p>
+          </div>
+        </div>
       </div>
-
-    </div>
-    <div class="copyright">
-      <div class="container">
-        <p>Copyright © 2022 Abarrotex</p>
-      </div>
-    </div>
-    </div>
-  </footr>
-</body>
+    </footr>
+  </body>
 
 </html>
