@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .checked {
+      color: orange;
+    }
+  </style>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css" />
@@ -35,11 +40,14 @@
                       <nav class="main-menu ">
                         <ul class="menu-area-main">
                           <li> <a href="index.html">Hogar</a> </li>
-                          <li> <a href="#about">Acerca de nosotros</a> </li>
-                          <li class="active"> <a href="#vegetable">Productos</a> </li>
-                          <li> <a href="#testimonial">Reseñas</a> </li>
-                          <li> <a href="profile.html">Mi Perfil</a> </li>
-                         
+                          <li> <a href="#contactos">Contactanos</a> </li>
+                          <li class="active"> <a href="#">Productos</a> </li>
+                          <li> <a href="#testimonial">Reseñas</a> </li>         
+                          <li> <a href="register.html">Registrarse</a> </li>             
+                          <li> <a href="login.html">Login</a> </li>        
+                          <li> <a href="Whishlist.html">Lista de Deseados</a> </li>
+                          <li> <a href="carrito.html">Carrito</a> </li>
+                          <li> <a href="profile.html">Perfil</a> </li></li>
                          <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
                          </ul>
                        </nav>
@@ -84,5 +92,92 @@
               </div>
             </div>
           </div>
+          <div class="container text-left">
+            <h5 class="h5 text-dark">Calificación</h5>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+
+            <h5 class="h5 text-dark mt-4">Comentarios</h5>
+            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5">
+            </div>
+          </div>
+    </div>
+
+    
+    <footr>
+      <div id="contactos" class="footer ">
+        <div class="container-sm text-justify">
+          <div class="row justify-content-md-center">
+            <div class="col-md-11 my-5">
+              <div class="card border-secondary bg-secondary text-light mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="ms-5 mt-4">
+                        <h3 class="card-title">Abarrotex</h5>
+                          <p class="card-text">
+                          <h6>e-mail:</h6>
+                          abarrotex@gmail.com <br><br>
+                          <h6>Atención al Cliente:</h6>
+                          +52 449 451 8256
+                          </p>
+    
+                          <a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=100087571190388"
+                            target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+                          <a class="btn btn-success" href="https://wa.me/4494518256"><i class="bi bi-whatsapp"
+                              target="_blank" title="WhatsApp"></i></a>
+                          <a class="btn btn-light" href="https://www.instagram.com/abarrotex/" target="_blank"
+                            title="Instagram"><i class="bi bi-instagram"></i></a>
+                          <a class="btn btn-dark" href="https://www.tiktok.com/@abarrotex" target="_blank" title="TikTok"><i
+                              class="bi bi-tiktok"></i></a>
+    
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <h5 class="card-title text-break">Dejanos tu información para poder brindarte
+                        una atención personalizada</h5>
+                      <p class="card-text me-5">Dejanos tus comentarios para saber tus problemas o de lo
+                        contrario para hacernos saber qué te agradó de tu compra con nosotros</p>
+                      <div class="me-5">
+                        <form>
+                          <input type="text" class="form-control" id="InputName" placeholder="Ingresa tu nombre..."
+                            style="margin-bottom: 20px;">
+                          <input type="email" class="form-control" id="InputEmail" placeholder="Ingresa un email..."
+                            style="margin-bottom: 20px;">
+                          <input type="text" class="form-control" id="InputMessage" placeholder="Ingresa tu mensaje..."
+                            style="margin-bottom: 20px;">
+                          <button type="submit" class="btn btn-success">Enviar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <p>Copyright © 2022 Abarrotex</p>
+          </div>
+        </div>
+      </div>
+    </footr>
+      
+     <!-- Javascript files-->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/jquery-3.0.0.min.js"></script>
+     <script src="js/plugin.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+     <!-- sidebar -->
+     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+     <script src="js/custom.js"></script>
+     <div id="fb-root"></div>
+     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v15.0" nonce="XPvb8Wtb"></script>
 </body>
 </html>
