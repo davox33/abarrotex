@@ -1,0 +1,30 @@
+[
+{
+  "name":"Botanas",
+  "desc":"Las botanas se han vuelto parte de nuestros días, es tan común verlas en fiestas, bares, restaurantes, en tu casa para ver películas o partidos."
+},
+{
+  "name":"Pan",
+  "desc":"Alimento básico que se elabora con una mezcla de harina, generalmente de trigo, agua, sal y levadura, que se amasa y se cuece en un horno en piezas de distintas formas y tamaños; su sabor, color y textura pueden variar según el tipo de harina empleado y los ingredientes secundarios añadidos, como leche, mantequilla, frutos secos, etc."
+},
+{
+  "name":"Arroz Frijol y Semillas",
+  "desc":"Las semillas son la base principal para el sustento humano. Son las depositarias del potencial genético de las especies agrícolas y sus variedades resultantes de la mejora continua y la selección a través del tiempo."
+},
+{
+  "name":"Limpieza del Hogar",
+  "desc":"Productos de Limpieza de la mejor calidad, variedad de marcas y tipos"
+},
+{
+  "name":"Galletas",
+  "desc":"Las pastas secas son una especialidad de repostería, son pequeñas galletas cocidas al horno, hecho con una pasta a base de harina, mantequilla, huevos, y, azúcar o sal según el tipo."
+},
+{
+  "name":"Azucar y Postres",
+  "desc":"El postre es el plato de sabor dulce o salado que se toma al final de la comida, o de merienda. Cuando se habla de postres se entiende alguna preparación dulce, bien sean cremas, tartas, pasteles, helados, bombones, etc."
+},
+{
+  "name":"Leche",
+  "desc":"Bebidad lácteas o basadas en leche"
+}
+]
