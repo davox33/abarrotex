@@ -184,6 +184,37 @@ function listarLimpiezaHogar() {
   }
 }
 
+function listarSemillas() {
+    document.getElementById("containerCat").innerHTML = "";
+    for (let i = 0; i < dataCargada.length; i++) {
+      if (dataCargada[i].categoría === "Arroz, Frijol y Semillas") {
+        document.getElementById("containerCat").innerHTML += `
+              <div class="col" id="containerCat">
+              <div class="card border-dark">
+                              <div class="card-header">
+                                  <a href="${dataCargada[i].plantilla}"><img src="${dataCargada[i].imagen}" class="card-img-top" alt="Fabulosos Varios"></a>
+                              </div>
+                              <div class="card-body">
+                                  <h5 class="card-title">${dataCargada[i].name}</h5>
+                                  <p class="card-text text-justify">
+                                  ${dataCargada[i].desc}<br />
+                                  <h3>$${dataCargada[i].precio} c/u</h3><br />
+                                  <strong>${dataCargada[i].categoría}</strong> <br>
+                                  <strong>${dataCargada[i].marca}</strong>
+                                  </p>
+                              </div>
+                              <div class="card-footer border-dark text-nowrap">
+                                  <a href="${dataCargada[i].now}" class="btn btn-outline-primary" ><i class="bi bi-cart-plus"></i></a>
+                                  
+                                  <a href="${dataCargada[i].cart}" class="btn btn-outline-warning">Comprar Ahora</a>
+                              </div>
+                          </div>
+                          </div>
+              `;
+      }
+    }
+  }
+
 function listarCaros() {
   document.getElementById("containerCat").innerHTML = `
                 <div class="row">

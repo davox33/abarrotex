@@ -29,6 +29,32 @@ var dataCargada=[
     "desc":"Bebidad lácteas o basadas en leche"
   }
   ]
+
+  function agregarBasicos(){
+    for (let i=0;i<dataCargada.length;i++){
+      nombre = dataCargada[i].name;
+      description = dataCargada[i].desc;
+  
+      let categoria={
+        nombre,
+        description
+    }
+
+    if (localStorage.getItem("Categorias")==null) {
+        let categorias = []
+        categorias.push(categoria)
+        localStorage.setItem("Categorias", JSON.stringify(categorias))
+    }else{
+        let categorias = JSON.parse(localStorage.getItem("Categorias"))
+        categorias.push(categoria)
+        localStorage.setItem("Categorias", JSON.stringify(categorias))
+    }
+
+    }
+
+    leer();
+  }
+
 function crear(e){
     nombre = document.getElementById("name").value;
     description = document.getElementById("description").value;
@@ -57,7 +83,7 @@ function crear(e){
 function leer(){
     let categorias = JSON.parse(localStorage.getItem("Categorias"));
     document.getElementById("tbody").innerHTML=""
-    for(let i=0; i<dataCargada.length;i++){
+    /*for(let i=0; i<dataCargada.length;i++){
       let nombre = dataCargada[i].name
       let description = dataCargada[i].desc
 
@@ -68,7 +94,7 @@ function leer(){
      <td><button class="btn btn-danger">Eliminar</button>
      <button class="btn btn-success">Editar</button></td>
       </tr>`
-  }
+  }*/
     for(let i=0; i<categorias.length;i++){
         let nombre = categorias[i].nombre
         let description = categorias[i].description

@@ -119,8 +119,8 @@ function crear(e){
 
 function leerBasic(){
   let productos = JSON.parse(localStorage.getItem("Productos"));
-  /*document.getElementById("tbody").innerHTML=""
-  for(let i=0; i<dataCargada.length;i++){
+  document.getElementById("tbody").innerHTML=""
+  /*for(let i=0; i<dataCargada.length;i++){
       let nombre = dataCargada[i].name
       let precio = dataCargada[i].precio
       let description = dataCargada[i].desc
@@ -292,6 +292,7 @@ function agregarBasicos(){
         localStorage.setItem("Productos", JSON.stringify(products))
     }
   }
+  leerBasic();
 }
 
 function eliminar(nombre){
