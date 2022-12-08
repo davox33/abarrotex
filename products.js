@@ -119,7 +119,7 @@ function crear(e){
 
 function leerBasic(){
   let productos = JSON.parse(localStorage.getItem("Productos"));
-  document.getElementById("tbody").innerHTML=""
+  /*document.getElementById("tbody").innerHTML=""
   for(let i=0; i<dataCargada.length;i++){
       let nombre = dataCargada[i].name
       let precio = dataCargada[i].precio
@@ -139,7 +139,7 @@ function leerBasic(){
      <td><button class="btn btn-danger")">Eliminar</button>
      <button class="btn btn-success" )">Editar</button></td>
       </tr>`
-  }
+  }*/
   for(let i=0; i<productos.length;i++){
     let nombre = productos[i].nombre
     let precio = productos[i].precio
@@ -262,6 +262,36 @@ function actualizar(i){
             }
         }
     }  
+}
+
+function agregarBasicos(){
+  for (let i=0;i<dataCargada.length;i++){
+    nombre = dataCargada[i].name;
+    precio = dataCargada[i].precio;
+    description = dataCargada[i].desc;
+    imagen = dataCargada[i].imagen;
+    desc = dataCargada[i].desl;
+    category = dataCargada[i].categoría;
+
+    let product={
+        nombre,
+        precio,
+        description,
+        imagen,
+        desc,
+        category
+    }
+
+    if (localStorage.getItem("Productos")==null) {
+        let products = []
+        products.push(product)
+        localStorage.setItem("Productos", JSON.stringify(products))
+    }else{
+        let products = JSON.parse(localStorage.getItem("Productos"))
+        products.push(product)
+        localStorage.setItem("Productos", JSON.stringify(products))
+    }
+  }
 }
 
 function eliminar(nombre){

@@ -42,14 +42,13 @@
                         <ul class="menu-area-main">
                           <li> <a href="index.html">Hogar</a> </li>
                           <li> <a href="#contactos">Contactanos</a> </li>
-                          <li class="active"> <a href="#">Productos</a> </li>
-                          <li> <a href="#testimonial">Reseñas</a> </li>         
-                          <li> <a href="register.html">Registrarse</a> </li>             
+                          <li class="active"> <a href="Catalogo.html">Productos</a> </li>
+                          <li> <a href="LoginCRUD.html">Administración</a> </li>         
+                          <li> <a href="profile.html">Mi Perfil</a> </li>             
                           <li> <a href="login.html">Login</a> </li>        
-                          <li> <a href="Whishlist.html">Lista de Deseados</a> </li>
+                          <li> <a href="wish.html">Lista de Deseados</a> </li>
                           <li> <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_cart&business=96XL9CFWH268G&display=1">Carrito</a> </li>
-                          <li> <a href="profile.html">Perfil</a> </li></li>
-                         <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
+                          <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
                          </ul>
                        </nav>
                      </div>
@@ -88,7 +87,8 @@
                 </div>
                 <div class="row ml-4 mt-4">
                     <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L66GQQ8W3WL2A"><button type="button" class="btn btn-primary">Comprar Ahora</button></a>
-                    <button type="button" class="btn btn-outline-primary mt-2">Agregar al Carrito</button>
+                    <a href="#" class="btn btn-outline-danger" onclick="agregar('Sabritas','detallesSabritas.html', 'imgur.com/3Bmssx1.jpeg', '22','Sabritas Original, papas fritas con sal (bolsa de 45 gramos)')"><i class="bi bi-heart"></i></a>
+                    <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQUHHB4CX73M4"><button type="button" class="btn btn-outline-primary mt-2">Agregar al Carrito</button></a>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@
       </div>
     </footr>
     
-
+    <script src="wish.js"></script>
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
